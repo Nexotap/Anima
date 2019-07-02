@@ -1,0 +1,38 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context="ch.labrat.anima.MainActivity"
+        tools:ignore="MergeRootFrame">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/breed_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingLeft="@dimen/margin_normal"
+            android:paddingRight="@dimen/margin_normal"
+            app:layoutManager="GridLayoutManager"
+            app:spanCount="2"
+            tools:context="ch.labrat.anima.MainActivity"
+            tools:listitem="@layout/list_item_breed" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:tint="@android:color/white"
+            app:layout_anchor="@id/breed_list"
+            app:layout_anchorGravity="bottom|end"
+            app:srcCompat="@drawable/ic_plus" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

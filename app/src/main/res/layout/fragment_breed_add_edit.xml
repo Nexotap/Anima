@@ -1,0 +1,65 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+                name="viewModel"
+                type="ch.labrat.anima.features.breed.BreedViewModel" />
+    </data>
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/breed_edit_scrollview" android:fillViewport="false"
+            android:clipToPadding="true">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                           android:layout_height="wrap_content"
+        >
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:id="@+id/breed_name"
+                    app:layout_constraintVertical_chainStyle="packed" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/breed_description"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="16dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/name"
+                        android:text="@={viewModel.breed.name}" android:id="@+id/breed_name_text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:id="@+id/breed_description"
+                    app:layout_constraintTop_toBottomOf="@+id/breed_name" android:layout_marginBottom="1dp"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/breed_imageUrl"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp" android:layout_marginTop="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/description"
+                        android:text="@={viewModel.breed.description}" android:id="@+id/breed_description_text"/>
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:id="@+id/breed_imageUrl"
+                    app:layout_constraintTop_toBottomOf="@+id/breed_description"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp" android:layout_marginTop="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/image_url"
+                        android:text="@={viewModel.breed.imageUrl}" android:id="@+id/breed_image_url_text"/>
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

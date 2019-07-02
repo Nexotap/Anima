@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".features.settings.SettingsFragment"
+            android:id="@+id/frameLayout">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/spacing_middle"
+            android:paddingTop="@dimen/spacing_middle">
+
+            <LinearLayout
+                android:id="@+id/calendarItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:minHeight="@dimen/settings_item_size"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:src="@android:drawable/ic_menu_my_calendar"
+                    android:tint="@color/grey_40"
+                    android:layout_width="@dimen/settings_image_size"
+                    android:layout_height="@dimen/settings_image_size"
+                    android:id="@+id/imageViewCalendar"
+                    android:contentDescription="@string/a11y_settings_item_image"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_calendar_title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:id="@+id/textViewCalendar"
+                    android:layout_marginEnd="@dimen/padding_small"
+                    android:layout_marginStart="@dimen/padding_small"
+                    android:layout_weight="1"/>
+                <ImageView
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:tint="@color/grey_40"
+                    android:layout_width="@dimen/settings_image_size"
+                    android:layout_height="@dimen/settings_image_size"
+                    android:id="@+id/imageViewCalendarGo"
+                    android:contentDescription="@string/a11y_settings_item_image"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:minHeight="@dimen/settings_item_size"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:src="@android:drawable/ic_menu_my_calendar"
+                    android:tint="@color/grey_40"
+                    android:layout_width="@dimen/settings_image_size"
+                    android:layout_height="@dimen/settings_image_size"
+                    android:id="@+id/imageViewSample"
+                    android:contentDescription="@string/a11y_settings_item_image"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_calendar_title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:id="@+id/textViewSample"
+                    android:layout_marginEnd="@dimen/padding_small"
+                    android:layout_marginStart="@dimen/padding_small"
+                    android:layout_weight="1"/>
+                <ImageView
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:tint="@color/grey_40"
+                    android:layout_width="@dimen/settings_image_size"
+                    android:layout_height="@dimen/settings_image_size"
+                    android:id="@+id/imageViewSample2"
+                    android:contentDescription="@string/a11y_settings_item_image"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

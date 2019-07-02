@@ -1,0 +1,214 @@
+<resources>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    <!-- Resources that do not require translation -->
+    <string name="app_name" translatable="false">Anima</string>
+    <string name="navigation_drawer_header_title" translatable="false">Anima</string>
+
+    <!-- Translatable resources -->
+    <string name="dashboard_title"
+            translation_description="Title for the 'Dashboard' screen where the user can see an overview of everything.">
+        Dashboard
+    </string>
+    <string name="statistics_title"
+            translation_description="Title for the 'Statistics' screen where the user can see an overview of the statistics.">
+        Statistics
+    </string>
+    <string name="settings_title"
+            translation_description="Title for the 'Settings' screen where the user can change settings.">
+        Settings
+    </string>
+    <string name="settings_calendar_title"
+            translation_description="Title for the 'Calendar settings' screen where the user can change calendar settings.">
+        Calendar settings
+    </string>
+    <string name="accounting_title"
+            translation_description="Title for the 'Accounting' screen where the user can see an overview of the accounting.">
+        Accounting
+    </string>
+    <string name="catalog_title"
+            translation_description="Title for the 'Catalog' screen where the user can see an overview of the catalog.">
+        Catalog
+    </string>
+    <string name="client_list_title"
+            translation_description="Title for the 'Client' screen where the user can see an overview of the clients.">
+        Clients
+    </string>
+    <string name="client_detail_title"
+            translation_description="Title for the 'Client' screen where the user can see the detail of a client.">
+        Client detail
+    </string>
+    <string name="client_add_edit_title"
+            translation_description="Title for the 'Client' screen where the user can add or edit a client.">
+        Add / edit client
+    </string>
+    <string name="horse_list_title"
+            translation_description="Title for the 'Horse' screen where the user can see an overview of the horses.">
+        Horses
+    </string>
+    <string name="horse_detail_title"
+            translation_description="Title for the 'Horse' screen where the user can see the detail of a horse.">
+        Horse detail
+    </string>
+    <string name="horse_add_edit_title"
+            translation_description="Title for the 'Horse' screen where the user can add or edit a horse.">
+        Add / edit stable
+    </string>
+    <string name="stable_list_title"
+            translation_description="Title for the 'Stable' screen where the user can see an overview of the stables.">
+        Stables
+    </string>
+    <string name="stable_detail_title"
+            translation_description="Title for the 'Stable' screen where the user can see the detail of a stable.">
+        Stable detail
+    </string>
+    <string name="stable_add_edit_title"
+            translation_description="Title for the 'Stable' screen where the user can add or edit a stable.">
+        Add / edit table
+    </string>
+    <string name="breed_list_title"
+            translation_description="Title for the 'Breed' screen where the user can see an overview of the breeds.">
+        Breeds
+    </string>
+    <string name="breed_detail_title"
+            translation_description="Title for the 'Breed' screen where the user can see the detail of a breed.">
+        Breed detail
+    </string>
+    <string name="breed_add_edit_title"
+            translation_description="Title for the 'Breed' screen where the user can add or edit a breed.">
+        Add / edit breed
+    </string>
+
+
+    <string name="navigation_drawer_header_content_description"
+            translation_description="Content description for the image that is shown at the top of the navigation drawer.">
+        Navigation drawer header logo
+    </string>
+    <string name="dashboard_empty" translation_description="Text that is shown on the 'Dashboard' screen when empty">
+        Your dashboard is empty
+    </string>
+
+    <string name="breed_detail_image_content_description"
+            translation_description="Content description for the header / hero image that is show at the top of the breed detail screen.">
+        Image of breed
+    </string>
+
+    <!-- Accessibility -->
+    <string name="a11y_dashboard_item_image"
+            translation_description="Accessibility text for each of the dashboard images shown in the 'Dashboard' screen.">
+        Picture of item
+    </string>
+    <string name="a11y_horse_item_image"
+            translation_description="Accessibility text for each of the horse images shown in the 'Horse' screen.">
+        Picture of item
+    </string>
+    <string name="a11y_settings_item_image"
+            translation_description="Accessibility text for each of the settings images shown in the 'Settings' screen.">
+        Picture of item
+    </string>
+
+    <string name="added_horse" translation_description="Confirmation text that is shown when a user adds a horse.">Added
+        horse
+    </string>
+
+    <string name="share_text_breed"
+            translation_description="The default messaged used when sharing a plant on SNS, etc.">Check out the %s plant
+        in the Android Sunflower app
+    </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="add">Add</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <string name="client">Client</string>
+    <string name="clients">Clients</string>
+    <string name="horse">Horse</string>
+    <string name="horses">Horses</string>
+    <string name="avatar">Avatar</string>
+    <string name="owner">Owner</string>
+    <string name="stable">Stable</string>
+    <string name="stables">Stables</string>
+    <string name="veterinary">Veterinary</string>
+
+
+    <string name="secret">Secret</string>
+
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="image_url">Image Url</string>
+    <string name="gender">Gender</string>
+    <string name="age">Age</string>
+    <string name="breed">Breed</string>
+    <string name="breeds">Breeds</string>
+    <string name="color">Color</string>
+    <string name="physique">Physique</string>
+    <string name="abnormalities">Abnormalities</string>
+    <string name="keeping">Keeping</string>
+    <string name="use">Use</string>
+    <string name="shoeing">Shoeing</string>
+    <string name="created_at">Created at</string>
+    <string name="edited_at">Edited at</string>
+
+    <string name="dob">Date of birth</string>
+
+    <string name="select_date">Select date</string>
+    <string name="select_dob">Select date of birth</string>
+    <string name="select_gender">Select gender</string>
+    <string name="select_owner">Select owner</string>
+    <string name="select_veterinary">Select veterinary</string>
+
+    <string name="fetter_position">Fetter position</string>
+
+
+    <string name="menu_item_save">Save</string>
+    <string name="menu_item_cancel">Cancel</string>
+    <string name="menu_item_edit">Edit</string>
+    <string name="menu_item_delete">Delete</string>
+
+    <string name="english">English</string>
+    <string name="german">German</string>
+
+    <string-array name="physique_array">
+        <item>Square</item>
+        <item>Rectangular</item>
+        <item>Front overbuilt</item>
+        <item>Back overbuilt</item>
+    </string-array>
+
+    <string-array name="fetter_position_array">
+        <item>Normal</item>
+    </string-array>
+
+    <string name="fl">FL</string>
+    <string name="fr">FR</string>
+    <string name="hl">HL</string>
+    <string name="hr">HR</string>
+    <string name="permission_required">Permission required</string>
+    <string name="Ok">OK</string>
+    <string name="permission_for_calendar_text">Full permission to the calendar is required for this app to read and write events.</string>
+    <string name="allow">Allow</string>
+    <string name="cancel">Cancel</string>
+
+    <string-array name="Colors">
+        <item name="color">Red</item>
+        <item name="color">Orange</item>
+        <item name="color">Yellow</item>
+        <item name="color">Green</item>
+        <item name="color">Blue</item>
+        <item name="color">White</item>
+        <item name="color">Black</item>
+        <item name="color">Purple</item>
+        <item name="color">Pink</item>
+        <item name="color">Gray</item>
+        <item name="color">Cyan Blue</item>
+        <item name="color">Magenta</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/dashboard_fragment">
+
+    <fragment
+        android:id="@+id/dashboard_fragment"
+        android:name="ch.labrat.anima.features.dashboard.DashboardFragment"
+        android:label="@string/dashboard_title"
+        tools:layout="@layout/fragment_dashboard">
+        <action android:id="@+id/action_dashboard_fragment_to_horse_list_fragment" app:destination="@id/horse_list_fragment" />
+        <action android:id="@+id/action_dashboard_fragment_to_breed_list_fragment" app:destination="@id/breed_list_fragment" />
+        <action android:id="@+id/action_dashboard_fragment_to_stable_list_fragment" app:destination="@id/stable_list_fragment"/>
+        <action android:id="@+id/action_dashboard_fragment_to_client_list_fragment" app:destination="@id/client_list_fragment"/>
+        <action android:id="@+id/action_dashboard_fragment_to_settings_fragment" app:destination="@id/settings_fragment"/>
+        <action android:id="@+id/action_dashboard_fragment_to_catalog_fragment" app:destination="@id/catalog_fragment"/>
+        <action android:id="@+id/action_dashboard_fragment_to_accounting_fragment" app:destination="@+id/accounting_fragment"/>
+        <action android:id="@+id/action_dashboard_fragment_to_statistics_fragment" app:destination="@id/statistics_fragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/client_list_fragment"
+        android:name="ch.labrat.anima.features.client.ClientListFragment"
+        android:label="@string/client_list_title"
+        tools:layout="@layout/fragment_client_list" />
+
+    <fragment
+        android:id="@+id/horse_list_fragment"
+        android:name="ch.labrat.anima.features.horse.HorseListFragment"
+        android:label="@string/horse_list_title"
+        tools:layout="@layout/fragment_horse_list">
+        <action
+                android:id="@+id/action_horse_list_fragment_to_horse_detail_fragment"
+                app:destination="@id/horse_detail_fragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right" />
+        <action android:id="@+id/action_horse_list_fragment_to_horseAddEditFragment"
+                app:destination="@id/horse_add_edit_fragment"/>
+    </fragment>
+    <fragment
+            android:id="@+id/horse_detail_fragment"
+            android:name="ch.labrat.anima.features.horse.HorseDetailFragment"
+            android:label="@string/horse_detail_title"
+            tools:layout="@layout/fragment_horse_detail">
+        <argument
+                android:name="id"
+                app:argType="string" />
+        <action android:id="@+id/action_horse_detail_fragment_to_horseAddEditFragment"
+                app:destination="@id/horse_add_edit_fragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/stable_list_fragment"
+        android:name="ch.labrat.anima.features.stable.StableListFragment"
+        android:label="@string/stable_list_title"
+        tools:layout="@layout/fragment_stable_list" >
+        <action android:id="@+id/action_stable_list_fragment_to_stableDetailFragment"
+                app:destination="@id/stable_detail_fragment"/>
+        <action android:id="@+id/action_stable_list_fragment_to_stable_add_edit_fragment"
+                app:destination="@id/stable_add_edit_fragment"/>
+    </fragment>
+    <fragment android:id="@+id/stable_detail_fragment"
+              android:name="ch.labrat.anima.features.stable.StableDetailFragment"
+              android:label="@string/stable_detail_title"
+              tools:layout="@layout/fragment_stable_detail">
+        <action android:id="@+id/action_stable_detail_fragment_to_stable_add_edit_fragment"
+                app:destination="@id/stable_add_edit_fragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/breed_list_fragment"
+        android:name="ch.labrat.anima.features.breed.BreedListFragment"
+        android:label="@string/breed_list_title"
+        tools:layout="@layout/fragment_breed_list" >
+        <action android:id="@+id/action_breed_list_fragment_to_breedDetailFragment"
+                app:destination="@id/breed_detail_fragment"/>
+        <action android:id="@+id/action_breed_list_fragment_to_breedAddEditFragment"
+                app:destination="@id/breed_add_edit_fragment"/>
+    </fragment>
+    <fragment android:id="@+id/breed_detail_fragment"
+              android:name="ch.labrat.anima.features.breed.BreedDetailFragment"
+              android:label="@string/breed_detail_title"
+              tools:layout="@layout/fragment_breed_detail">
+        <argument
+                android:name="id"
+                app:argType="string" />
+        <action android:id="@+id/action_breedDetailFragment_to_breedEditFragment"
+                app:destination="@id/breed_add_edit_fragment"/>
+    </fragment>
+    <fragment android:id="@+id/breed_add_edit_fragment"
+              android:name="ch.labrat.anima.features.breed.BreedAddEditFragment"
+              android:label="@string/breed_add_edit_title"
+              tools:layout="@layout/fragment_breed_add_edit">
+        <argument
+                android:name="id"
+                app:argType="string" />
+    </fragment>
+    <fragment android:id="@+id/horse_add_edit_fragment" android:name="ch.labrat.anima.features.horse.HorseAddEditFragment"
+              android:label="fragment_horse_add_edit" tools:layout="@layout/fragment_horse_add_edit"/>
+    <fragment android:id="@+id/stable_add_edit_fragment" android:name="ch.labrat.anima.features.stable.stable_add_edit_fragment"
+              android:label="fragment_stable_add_edit_fragment"
+              tools:layout="@layout/fragment_stable_add_edit"/>
+    <fragment android:id="@+id/settings_fragment" android:name="ch.labrat.anima.features.settings.SettingsFragment"
+              android:label="fragment_settings" tools:layout="@layout/fragment_settings">
+        <action android:id="@+id/action_settings_fragment_to_settingsCalendarFragment"
+                app:destination="@id/settings_calendar_fragment"/>
+    </fragment>
+    <fragment android:id="@+id/catalog_fragment" android:name="ch.labrat.anima.features.catalog.CatalogFragment"
+              android:label="fragment_catalog" tools:layout="@layout/fragment_catalog"/>
+    <fragment android:id="@+id/statistics_fragment" android:name="ch.labrat.anima.features.statistics.StatisticsFragment"
+              android:label="fragment_statistics" tools:layout="@layout/fragment_fragment_statistics"/>
+    <fragment android:id="@+id/accounting_fragment" android:name="ch.labrat.anima.features.accounting.AccountingFragment"
+              android:label="fragment_accounting" tools:layout="@layout/fragment_accounting"/>
+    <fragment android:id="@+id/settings_calendar_fragment" android:name="ch.labrat.anima.features.settings.SettingsCalendarFragment"
+              android:label="fragment_settings_calendar" tools:layout="@layout/fragment_settings_calendar"/>
+
+</navigation>

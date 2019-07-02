@@ -1,0 +1,127 @@
+[
+  {
+    "name": "Arabian",
+    "description": "The Arabian or Arab horse is a breed of horse that originated on the Arabian Peninsula. With a distinctive head shape and high tail carriage, the Arabian is one of the most easily recognizable horse breeds in the world.<br><br>(From <a href=\"https://en.wikipedia.org/wiki/Arabian_horse\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/Halterstandingshotarabianone.jpg"
+  },
+  {
+    "name": "Thoroughbred",
+    "description": "The Thoroughbred is a horse breed best known for its use in horse racing. Although the word thoroughbred is sometimes used to refer to any breed of purebred horse, it technically refers only to the Thoroughbred breed. Thoroughbreds are considered \"hot-blooded\" horses that are known for their agility, speed, and spirit. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Thoroughbred\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Subject_%28horse%29_20080420P1.jpg"
+  },
+  {
+    "name": "Quarter Horse",
+    "description": "The American Quarter Horse, or Quarter Horse, is an American breed of horse that excels at sprinting short distances. Its name came from its ability to outdistance other horse breeds in races of a quarter mile or less; some have been clocked at speeds up to 55 mph (88.5 km/h).<br><br>(From <a href=\"https://en.wikipedia.org/wiki/American_Quarter_Horse\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Quarter_Horse%28REFON%29-cleaned.jpg"
+  },
+  {
+    "name": "Paint",
+    "description": "The American Paint Horse is a breed of horse that combines both the conformational characteristics of a western stock horse with a pinto spotting pattern of white and dark coat colors.<br><br>(From <a href=\"https://en.wikipedia.org/wiki/American_Paint_Horse\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Am_Paint_Horse.jpg"
+  },
+  {
+    "name": "Friesian",
+    "description": "The Friesian (also Frizian) is a horse breed originating in Friesland, in the Netherlands. Although the conformation of the breed resembles that of a light draught horse, Friesians are graceful and nimble for their size. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Friesian_horse\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Friesian_Stallion.jpg"
+  },
+  {
+    "name": "Tennessee Walker",
+    "description": "The Tennessee Walking Horse or Tennessee Walker is a breed of gaited horse known for its unique four-beat running-walk and flashy movement. It was originally developed in the southern United States for use on farms and plantations. It is a popular riding horse due to its calm disposition, smooth gaits and sure-footedness. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Tennessee_Walking_Horse\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Tennessee_Walking_Horse2.jpg"
+  },
+  {
+    "name": "PRE",
+    "description": "Die Pura Raza Española (zu deutsch Reine Spanische Rasse, abgekürzt PRE oder P.R.E.) ist eine aus Spanien stammende und seit 1912 streng reglementierte Pferderasse. Die Pferde gehören zu den lange unter dem etwas unscharfen Oberbegriff Andalusier bekannten spanischen Rassepferden. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Pura_Raza_Española\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/56/Andalusian_horse_moscow.jpg"
+  },
+  {
+    "name": "Shire horse",
+    "description": "The Shire is a British breed of draught horse. It is usually black, bay, or grey. It is a tall breed, and Shires have at various times held world records both for the largest horse and for the tallest horse. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Shire_horse\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Shire.jpg"
+  },
+  {
+    "name": "Standardbred",
+    "description": "The Standardbred is an American horse breed best known for its ability in harness racing, where members of the breed compete at either a trot or pace. Developed in North America, the Standardbred is recognized worldwide, and the breed can trace its bloodlines to 18th-century England. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Standardbred\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/Meaulnes_du_Corta.jpg"
+  },
+  {
+    "name": "Morgan horse",
+    "description": "The Morgan horse is one of the earliest horse breeds developed in the United States.[1] Tracing back to the foundation sire Figure, later named Justin Morgan after his best-known owner, Morgans served many roles in 19th-century American history, being used as coach horses and for harness racing, as general riding animals, and as cavalry horses during the American Civil War on both sides of the conflict. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Morgan_horse\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/ChestnutSilver.jpg"
+  },
+  {
+    "name": "Percheron",
+    "description": "The Percheron is a breed of draft horse that originated in the Huisne river valley in western France, part of the former Perche province from which the breed takes its name. Usually gray or black in color, Percherons are well muscled, and known for their intelligence and willingness to work. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Percheron\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/Percheron3.jpg"
+  },
+  {
+    "name": "Shetland pony",
+    "description": "The Shetland pony is a British breed of pony originating in the Shetland Isles of Scotland. The ponies range in height at the withers from approximately 70 cm (28 in) to a permitted maximum of 107 cm (42 in). They have a heavy coat and short legs, and are considered quite intelligent. They are strong for their size, and are used for riding, driving, and pack purposes.  <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Shetland_pony\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Dusty_Trail.jpg"
+  },
+  {
+    "name": "Haflinger",
+    "description": "The Haflinger, also known as the Avelignese, is a breed of horse developed in Austria and northern Italy (namely Hafling in South Tyrol region) during the late nineteenth century. Haflinger horses are relatively small, are always chestnut with flaxen mane and tail, have distinctive gaits described as energetic but smooth, and are well-muscled yet elegant. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Haflinger\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Haflinger_Westfalensonne_und_Almfee.JPG"
+  },
+  {
+    "name": "Missouri Fox Trotter",
+    "description": "The Missouri Fox Trotter is a horse breed that originated in the state of Missouri in the United States. It was developed in the Ozark Mountains by settlers in the early 19th century, and quickly developed into a gaited breed appreciated for its stock horse abilities, stamina and smooth gaits. It performs an ambling gait known as the \"fox trot\", a four-beat broken diagonal gait in which the front foot of the diagonal pair lands before the hind, eliminating the moment of suspension and increasing smoothness. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Missouri_Fox_Trotter\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Quick_Trigger_Missouri_Fox_Trotter.jpeg"
+  },
+  {
+    "name": "Hanoverian",
+    "description": "A Hanoverian (German: Hannoveraner) is a warmblood horse breed originating in Germany, which is often seen in the Olympic Games and other competitive English riding styles, and has won gold medals in all three equestrian Olympic competitions. It is one of the oldest, most numerous, and most successful of the warmbloods. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Hanoverian_horse\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Lantinus_and_Lynch.jpg"
+  },
+  {
+    "name": "Lipizzan",
+    "description": "The Lipizzan, or Lipizzaner (Croatian: Lipicanac, Czech: Lipicán, Hungarian: Lipicai, Italian: Lipizzano, Slovene: Lipicanec), is a breed of horse originating from Lipica in Slovenia. Established in 1580, the Lipica stud farm is the world's oldest continuously operating stud farm. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Lipizzan\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Favory_Pallavicina.jpg"
+  },
+  {
+    "name": "Peruvian Paso",
+    "description": "The Peruvian Paso or Peruvian Horse is a breed of light saddle horse known for its smooth ride. It is distinguished by a natural, four-beat, lateral gait called the paso llano. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Peruvian_Paso\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Peruvian_Paso3.jpg"
+  },
+  {
+    "name": "Oldenburg",
+    "description": "The Oldenburg is a warmblood horse from the north-western corner of Lower Saxony, what was formerly the Grand Duchy of Oldenburg. The breed was built on a mare base of all-purpose farm and carriage horses, today called the Alt-Oldenburger. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Oldenburg_horse\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/72/Bess2.jpg"
+  },
+  {
+    "name": "Curly Horse",
+    "description": "A Curly is a breed of horse. Curlies, also called Bashkir Curlies, American Bashkir Curlies, and North American Curly Horses, come in all sizes, colors, and body types but all carry a gene for a unique curly coat of hair. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Curly_Horse\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Curly_horse_mane.jpg"
+  },
+  {
+    "name": "Rocky Mountain Horse",
+    "description": "The Rocky Mountain Horse is a horse breed developed in the state of Kentucky in the United States. Despite its name, it originated not in the Rocky Mountains, but instead in the Appalachian Mountains. A foundation stallion, brought from the western United States to eastern Kentucky around 1890, began the Rocky Mountain type in the late 19th century. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Rocky_Mountain_Horse\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/RockySilverhorse.jpg"
+  },
+  {
+    "name": "Exmoor pony",
+    "description": "The Exmoor pony is a horse breed native to the British Isles, where some still roam as semi-feral livestock on Exmoor, a large area of moorland in Devon and Somerset in southwest England. The Exmoor has been given \"endangered\" status by the Rare Breeds Survival Trust, and \"threatened\" status by The Livestock Conservancy. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Exmoor_pony\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/ExmoorponyPose.jpg"
+  },
+  {
+    "name": "Canadian horse",
+    "description": "The Canadian horse is a horse breed from Canada. It is a strong, well-muscled breed of horse, usually dark in colour. The horses are generally used for riding and driving. Descended from draft and light riding horses imported to Canada in the late 1600s, it was later crossed with other British and American breeds. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Canadian_horse\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Img_3372_Me_trot.jpg"
+  },
+  {
+    "name": "Appaloosa",
+    "description": "The Appaloosa is an American horse breed best known for its colorful spotted coat pattern. There is a wide range of body types within the breed, stemming from the influence of multiple breeds of horses throughout its history. Each horse's color pattern is genetically the result of various spotting patterns overlaid on top of one of several recognized base coat colors. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Appaloosa\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9b/THIEL_619.jpg"
+  },
+  {
+    "name": "Miniature horse",
+    "description": "Miniature horses are horses defined by their small height. They can be found in many nations, particularly in Europe and the Americas, and are the result of centuries of selective breeding. Depending on the particular breed registry involved, the height of these horses is usually less than 34–38 inches (86–97 cm) as measured at the last hairs of the mane, which are found at the withers. <br><br>(From <a href=\"https://en.wikipedia.org/wiki/Miniature_horse\">Wikipedia</a>)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Miniatuurpaardje.jpg"
+  },
+  {
+    "name": "",
+    "description": " <br><br>(From <a href=\"\">Wikipedia</a>)",
+    "imageUrl": ""
+  }
+]
