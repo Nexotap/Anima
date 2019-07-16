@@ -195,20 +195,13 @@
     <string name="permission_for_calendar_text">Full permission to the calendar is required for this app to read and write events.</string>
     <string name="allow">Allow</string>
     <string name="cancel">Cancel</string>
+    <string name="nickname">Nickname</string>
 
-    <string-array name="Colors">
-        <item name="color">Red</item>
-        <item name="color">Orange</item>
-        <item name="color">Yellow</item>
-        <item name="color">Green</item>
-        <item name="color">Blue</item>
-        <item name="color">White</item>
-        <item name="color">Black</item>
-        <item name="color">Purple</item>
-        <item name="color">Pink</item>
-        <item name="color">Gray</item>
-        <item name="color">Cyan Blue</item>
-        <item name="color">Magenta</item>
+    <string-array name="Genders">
+        <item name="gender"></item>
+        <item name="gender">Mare</item>
+        <item name="gender">Stallion</item>
+        <item name="gender">Gelding</item>
     </string-array>
 
 </resources>

@@ -48,7 +48,7 @@
     <dimen name="navigation_drawer_image_width">100dp</dimen>
 
     <dimen name="input_label_vertical_spacing">8dp</dimen>
-    <dimen name="input_label_horizontal_spacing">4dp</dimen>
+    <dimen name="input_label_horizontal_spacing">8dp</dimen>
 
 
 </resources>

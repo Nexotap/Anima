@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import ch.labrat.anima.R
-import ch.labrat.anima.features.base.BaseFragment
+import ch.labrat.anima.core.BaseFragment
 import ch.labrat.anima.utilities.MY_PERMISSIONS_REQUEST_CALENDAR
 import kotlinx.android.synthetic.main.fragment_settings.*
 

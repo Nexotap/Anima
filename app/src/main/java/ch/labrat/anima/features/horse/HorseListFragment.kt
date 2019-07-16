@@ -33,10 +33,11 @@ class HorseListFragment : Fragment() {
             lifecycleOwner = this@HorseListFragment
 
             fab.setOnClickListener {
-                val direction = HorseListFragmentDirections.actionHorseListFragmentToHorseDetailFragment("")
+                val direction = HorseListFragmentDirections.actionHorseListFragmentToHorseAddEditFragment("")
                 it.findNavController().navigate(direction)
             }
         }
+
         val adapter = HorseListAdapter()
         binding.horseList.adapter = adapter
         subscribeUi(adapter)

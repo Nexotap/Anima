@@ -21,7 +21,7 @@ class BreedDetailFragment : Fragment() {
     private lateinit var shareText: String
 
     private val breedViewModel: BreedViewModel by viewModels {
-        InjectorUtils.provideBreedDetailViewModelFactory(requireActivity(), args.id)
+        InjectorUtils.provideBreedViewModelFactory(requireActivity(), args.id)
     }
 
     override fun onCreateView(

@@ -44,5 +44,6 @@ class SeedDatabaseWorker(
             Log.e(TAG, "Error seeding database", ex)
             Result.failure()
         }
+
     }
 }

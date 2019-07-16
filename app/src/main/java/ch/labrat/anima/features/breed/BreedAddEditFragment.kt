@@ -17,7 +17,7 @@ import ch.labrat.anima.utilities.InjectorUtils
 class BreedAddEditFragment : Fragment() {
     private val args: BreedAddEditFragmentArgs by navArgs()
     private val breedViewModel: BreedViewModel by viewModels {
-        InjectorUtils.provideBreedDetailViewModelFactory(requireActivity(), args.id)
+        InjectorUtils.provideBreedViewModelFactory(requireActivity(), args.id)
     }
 
     override fun onCreateView(

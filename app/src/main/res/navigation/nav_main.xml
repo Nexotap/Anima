@@ -100,7 +100,9 @@
                 app:argType="string" />
     </fragment>
     <fragment android:id="@+id/horse_add_edit_fragment" android:name="ch.labrat.anima.features.horse.HorseAddEditFragment"
-              android:label="fragment_horse_add_edit" tools:layout="@layout/fragment_horse_add_edit"/>
+              android:label="fragment_horse_add_edit" tools:layout="@layout/fragment_horse_add_edit">
+        <argument android:name="id" app:argType="string"/>
+    </fragment>
     <fragment android:id="@+id/stable_add_edit_fragment" android:name="ch.labrat.anima.features.stable.stable_add_edit_fragment"
               android:label="fragment_stable_add_edit_fragment"
               tools:layout="@layout/fragment_stable_add_edit"/>

@@ -53,11 +53,11 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="Name"
+            android:text="@{horse.name}"
             android:textAppearance="?attr/textAppearanceListItem"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/horse_item_image"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent" tools:text="@string/name"/>
 
         <TextView
             android:id="@+id/horse_item_owner"
@@ -66,7 +66,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:text="Owner"
+            android:text="@{horse.breed}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/horse_item_image"
             app:layout_constraintTop_toBottomOf="@+id/horse_item_name" />
@@ -77,7 +77,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
-            android:text="Stable"
+            android:text="@{horse.gender}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/horse_item_image"
             app:layout_constraintTop_toBottomOf="@+id/horse_item_owner" />

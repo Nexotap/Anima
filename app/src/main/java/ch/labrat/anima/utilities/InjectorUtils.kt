@@ -23,6 +23,7 @@ import ch.labrat.anima.features.breed.BreedListViewModelFactory
 import ch.labrat.anima.features.breed.BreedRepository
 import ch.labrat.anima.features.horse.HorseListViewModelFactory
 import ch.labrat.anima.features.horse.HorseRepository
+import ch.labrat.anima.features.horse.HorseViewModelFactory
 
 /**
  * Static methods used to inject classes needed for various Activities and Fragments.
@@ -49,12 +50,21 @@ object InjectorUtils {
         return BreedListViewModelFactory(repository)
     }
 
-    fun provideBreedDetailViewModelFactory(
+    fun provideHorseViewModelFactory(
+        context: Context,
+        id: String
+    ): HorseViewModelFactory {
+        return HorseViewModelFactory(getHorseRepository(context),id)
+    }
+
+    fun provideBreedViewModelFactory(
             context: Context,
             id: String
     ): BreedViewModelFactory {
         return BreedViewModelFactory(getBreedRepository(context),id)
     }
+
+
 
 /*
     fun provideGardenHorseingListViewModelFactory(

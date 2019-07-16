@@ -6,11 +6,13 @@
                                                    android:layout_height="match_parent"
                                                    tools:context=".MainActivity" android:id="@+id/constraintLayout">
 
+
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/Colors"
+        android:divider="@color/colorPrimary"
+        android:dividerHeight="1dp"
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"

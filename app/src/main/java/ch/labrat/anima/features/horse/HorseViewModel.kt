@@ -1,4 +1,4 @@
-package ch.labrat.anima.features.breed
+package ch.labrat.anima.features.horse
 
 import android.util.Log
 import androidx.lifecycle.LiveData
@@ -11,21 +11,21 @@ import kotlinx.coroutines.cancel
 import kotlinx.coroutines.launch
 
 /**
- * The ViewModel used in [BreedAddEditFragment].
+ * The ViewModel used in [HorseAddEditFragment].
  */
-class BreedViewModel(
-    private var breedRepository: BreedRepository,
+class HorseViewModel(
+    private var horseRepository: HorseRepository,
     val id: String
 ) : ViewModel() {
 
-    var breed: LiveData<Breed>
+    var horse: LiveData<Horse>
 
     init {
         if (id == "") {
-            breed = MutableLiveData<Breed>(Breed())
+            horse = MutableLiveData(Horse())
         }
         else {
-            breed = breedRepository.getBreed(id)
+            horse = horseRepository.getHorse(id)
         }
     }
 
@@ -39,20 +39,21 @@ class BreedViewModel(
     }
 
     fun insert() {
+
         viewModelScope.launch {
-            breedRepository.insert(breed.value as Breed)
+            horseRepository.insert(horse.value as Horse)
         }
     }
 
     fun update() {
         viewModelScope.launch {
-            breedRepository.update(breed.value as Breed)
+            horseRepository.update(horse.value as Horse)
         }
     }
 
     fun delete() {
         viewModelScope.launch {
-            breedRepository.delete(breed.value as Breed)
+            horseRepository.delete(horse.value as Horse)
         }
     }
 

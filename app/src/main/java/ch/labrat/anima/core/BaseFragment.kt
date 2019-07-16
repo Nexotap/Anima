@@ -1,4 +1,4 @@
-package ch.labrat.anima.features.base
+package ch.labrat.anima.core
 
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AlertDialog
