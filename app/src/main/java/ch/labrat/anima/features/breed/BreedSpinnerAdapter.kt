@@ -1,27 +1,29 @@
 package ch.labrat.anima.features.breed
 
 import android.content.Context
-import android.graphics.Color
-import android.view.View
-import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import android.widget.TextView
 
-class BreedSpinnerAdapter(context: Context, textViewResourceId:Int, values:List<Breed>): ArrayAdapter<Breed>(context, textViewResourceId, values) {
+class BreedSpinnerAdapter(context: Context, textViewResourceId: Int, private val values: List<Breed>) :
+    ArrayAdapter<Breed>(context, textViewResourceId, values) {
 
-    // Your custom values for the spinner (Breed)
-    private val values:List<Breed> = values
-
-    override fun getItem(position:Int):Breed {
+    override fun getItem(position: Int): Breed {
         return values[position]
     }
 
-    override fun getItemId(position:Int):Long {
+    override fun getItemId(position: Int): Long {
         return position.toLong()
     }
 
+    fun getPositionById(id: String): Int {
+        for (item: Breed in values) {
+            if (item.id == id)
+                return values.indexOf(item)
+        }
+        return -1
+    }
+/*
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        val label =  super.getView(position, convertView, parent) as TextView
+        val label = super.getView(position, convertView, parent) as TextView
 
         label.setTextColor(Color.RED)
         // Then you can get the current item using the values array (Users array) and the current position
@@ -40,5 +42,5 @@ class BreedSpinnerAdapter(context: Context, textViewResourceId:Int, values:List<
 
         return label
     }
-
+*/
 }

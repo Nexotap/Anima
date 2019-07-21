@@ -21,6 +21,7 @@ import ch.labrat.anima.database.AppDatabase
 import ch.labrat.anima.features.breed.BreedViewModelFactory
 import ch.labrat.anima.features.breed.BreedListViewModelFactory
 import ch.labrat.anima.features.breed.BreedRepository
+import ch.labrat.anima.features.horse.HorseDetailViewModelFactory
 import ch.labrat.anima.features.horse.HorseListViewModelFactory
 import ch.labrat.anima.features.horse.HorseRepository
 import ch.labrat.anima.features.horse.HorseViewModelFactory
@@ -64,6 +65,12 @@ object InjectorUtils {
         return BreedViewModelFactory(getBreedRepository(context),id)
     }
 
+    fun provideHorseDetailViewModelFactory(
+        context: Context,
+        id: String
+    ): HorseDetailViewModelFactory {
+        return HorseDetailViewModelFactory(getHorseRepository(context),id)
+    }
 
 
 /*

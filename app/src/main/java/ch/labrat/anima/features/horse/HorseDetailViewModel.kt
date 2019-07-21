@@ -1,10 +1,7 @@
 package ch.labrat.anima.features.horse
 
 import android.util.Log
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
+import androidx.lifecycle.*
 import ch.labrat.anima.utilities.TAG
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.cancel
@@ -18,14 +15,14 @@ class HorseDetailViewModel(
     val id: String
 ) : ViewModel() {
 
-    var horse: LiveData<Horse>
+    var horse: LiveData<HorseDetail>
 
     init {
         if (id == "") {
-            horse = MutableLiveData(Horse())
+            horse = MutableLiveData(HorseDetail())
         }
         else {
-            horse = horseRepository.getHorse(id)
+            horse = horseRepository.getHorseDetail(id)
         }
     }
 
@@ -56,6 +53,19 @@ class HorseDetailViewModel(
             horseRepository.delete(horse.value as Horse)
         }
     }
+}
 
+/**
+ * Factory for creating a [HorseDetailViewModel] with a constructor that takes a [HorseRepository]
+ * and an ID for the current [Horse].
+ */
+class HorseDetailViewModelFactory(
+    private val horseRepository: HorseRepository,
+    private val id: String
+) : ViewModelProvider.NewInstanceFactory() {
 
+    @Suppress("UNCHECKED_CAST")
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        return HorseDetailViewModel(horseRepository, id) as T
+    }
 }

@@ -1,7 +1,6 @@
 package ch.labrat.anima.adapters
 
 import android.text.method.LinkMovementMethod
-import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.Spinner
@@ -15,11 +14,9 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import androidx.databinding.InverseBindingListener
 import ch.labrat.anima.features.breed.BreedSpinnerAdapter
-import ch.labrat.anima.utilities.TAG
-import androidx.appcompat.widget.AppCompatSpinner
-import android.widget.ArrayAdapter
 import android.widget.AdapterView
 import ch.labrat.anima.features.breed.Breed
+import kotlinx.coroutines.selects.select
 
 
 @BindingAdapter("imageFromUrl")
@@ -50,59 +47,61 @@ fun bindRenderHtml(view: TextView, description: String?) {
         view.text = ""
     }
 }
-
-
+/*
 @BindingAdapter("selectedValue")
-fun Spinner.setSelectedValue(selectedValue: Any?) {
-    Log.i(TAG, "setSelectedValue called!")
-//        setSpinnerValue(selectedValue)
-
-    Log.i(TAG, "selectedValue: " + selectedValue)
-
-//        if (adapter != null ) {
-//            val position = (adapter as ArrayAdapter<Any>).getPosition(value)
-//            setSelection(position, false)
-//            tag = position
-//        }
-
+fun Spinner.setSelectedValue(selectedValue: String?) {
+    if (adapter != null && selectedValue != null ) {
+        val position = adapter.get
+        setSelection(position, false)
+        tag = position
+    }
+}
+*/
+/*
+@BindingAdapter("selectedValueAttrChanged")
+fun Spinner.setInverseBindingListener(inverseBindingListener: InverseBindingListener?) {
+    onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+        override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
+            inverseBindingListener?.onChange()
+        }
+        override fun onNothingSelected(parent: AdapterView<*>) {}
+    }
 }
 
+@InverseBindingAdapter(attribute = "selectedValue", event = "selectedValueAttrChanged")
+fun Spinner.getSelectedValue(): Any? {
+    val breed: Breed = adapter.getItem(selectedItemPosition) as Breed
+    return breed.id
+}
+*/
+
+/*
+@BindingAdapter("selectedValue")
+fun Spinner.setSelectedValue(selectedValue: String?) {
+    if (adapter != null && selectedValue != null ) {
+            val position = (adapter as BreedSpinnerAdapter).getPositionById(selectedValue)
+            setSelection(position, false)
+            tag = position
+        }
+}
 
 @BindingAdapter("selectedValueAttrChanged")
 fun Spinner.setInverseBindingListener(inverseBindingListener: InverseBindingListener?) {
     onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
         override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
             inverseBindingListener?.onChange()
-            Log.i(TAG, "onItemSelected called!")
         }
-
         override fun onNothingSelected(parent: AdapterView<*>) {}
     }
-
-    Log.i(TAG, "setInverseBindingListener called!")
-//        if (newSelectedValue != null) {
-//            Log.i(TAG,"newSelectedValue=" + newSelectedValue)
-
-//            val pos = (adapter as BreedSpinnerAdapter).getPosition(newSelectedValue as Breed)
-//            setSelection(pos, true)
-//        }
-
 }
 
 @InverseBindingAdapter(attribute = "selectedValue", event = "selectedValueAttrChanged")
 fun Spinner.getSelectedValue(): Any? {
-//         return getSpinnerValue()
-
-    val value = selectedItem
-    val pos = selectedItemPosition
-    val breed: Breed = adapter.getItem(pos) as Breed
-    Log.i(TAG, "getSelectedValue called!")
-    Log.i(TAG, "Value: " + value)
-    Log.i(TAG, "Pos: " + pos)
-    Log.i(TAG, "BreedId: " + breed.id)
-
+    val breed: Breed = adapter.getItem(selectedItemPosition) as Breed
     return breed.id
 }
+*/
+
 
 /*
 @BindingAdapter("wateringText")

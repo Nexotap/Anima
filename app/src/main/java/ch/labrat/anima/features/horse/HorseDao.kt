@@ -27,4 +27,12 @@ abstract class HorseDao : BaseDao<Horse>() {
     @Query("SELECT COUNT(id) FROM horses")
     abstract fun getDataCount(): LiveData<String>
 
+    @Query("SELECT horses.id as id, horses.name as name, breeds.name as breedname, horses.gender as gender FROM horses JOIN breeds ON horses.breed_id = breeds.id")
+    abstract fun getHorseList(): LiveData<List<HorseListItem>>
+
+    @Query("SELECT horses.name as horsename, breeds.name as breedname FROM horses JOIN breeds ON horses.breed_id = breeds.id where horses.id = :id")
+    abstract fun getHorseDetail(id: String): LiveData<HorseDetail>
+
+//    @Query("SELECT horses.*, breeds.name FROM horses JOIN breeds ON horses.breed_id = breeds.id")
+//    abstract fun getHorseDetails(): LiveData<List<HorseDetail>>
 }

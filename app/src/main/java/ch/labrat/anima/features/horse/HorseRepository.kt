@@ -27,8 +27,10 @@ class HorseRepository private constructor(private val horseDao: HorseDao) {
     }
 
     fun getHorses() = horseDao.getHorses()
+    fun getHorseList() = horseDao.getHorseList()
 
     fun getHorse(id: String) = horseDao.getHorse(id)
+    fun getHorseDetail(id: String) = horseDao.getHorseDetail(id)
 
     fun getHorseById(id: String) = horseDao.getHorseById(id)
 

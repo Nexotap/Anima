@@ -51,11 +51,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/InputLabel"/>
+<!--            <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/sp_breed"
+                    app:selectedValue="@={viewModel.horse.breed}"
+                    style="@android:style/Widget.Material.Light.Spinner.Underlined"/>-->
             <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/sp_breed"
-                app:selectedValue="@={viewModel.horse.breed}"
-                style="@android:style/Widget.Material.Light.Spinner.Underlined"/>
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/sp_breed"
+                    style="@android:style/Widget.Material.Light.Spinner.Underlined"/>
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
@@ -76,6 +80,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/sp_gender"
                 android:entries="@array/Genders"
+                android:selectedItemPosition="@={viewModel.horse.gender}"
                 style="@android:style/Widget.Material.Light.Spinner.Underlined"/>
         </LinearLayout>
         <LinearLayout

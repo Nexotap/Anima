@@ -45,35 +45,36 @@ class HorseAddEditFragment : Fragment() {
             lifecycleOwner = this@HorseAddEditFragment
         }
 
-        // Populate Breed Spinner
+        // Populate Breed Spinner and set selected value
         breedListViewModel.breeds.observe(this, Observer { spinnerData ->
             val spinnerAdapter = BreedSpinnerAdapter(activity as Context, android.R.layout.simple_spinner_item, spinnerData)
             binding.spBreed.adapter = spinnerAdapter
+
+            // Get selected value from viewmodel and set selected value of breed spinner
+            horseViewModel.horse.value?.breed.let {
+                if ( it != null) {
+                    val position = (binding.spBreed.adapter as BreedSpinnerAdapter).getPositionById(it)
+                    binding.spBreed.setSelection(position)
+                    binding.spBreed.tag = position
+                }
+            }
+
         })
 
-//        binding.spBreed.post { binding.spBreed.setSelection(6) }
-
         binding.spBreed.onItemSelectedListener = object : OnItemSelectedListener {
-
             override fun onItemSelected(
                 adapterView: AdapterView<*>, view: View,
                 position: Int, id: Long
             ) {
+                // Set selected value in the viewmodel
                 val breed = binding.spBreed.adapter.getItem(position) as Breed
-                // Here you can do the action you want to...
-                Toast.makeText(context, "ID: " + breed.id + "\nName: " + breed.name,
-                    Toast.LENGTH_SHORT
-                ).show()
-                horseViewModel.horse.value?.breed = breed.name
+                horseViewModel.horse.value?.breed = breed.id
             }
 
             override fun onNothingSelected(adapter: AdapterView<*>) {}
         }
 
         setHasOptionsMenu(true)
-
-        Log.i(TAG,"HorseAddEditFragment:OnCreateView:" + args.id)
-
 
         return binding.root
     }
@@ -91,6 +92,7 @@ class HorseAddEditFragment : Fragment() {
                 } else {
                     horseViewModel.update()
                 }
+                Log.i(TAG,"onOptionsItemSelected() gender: " + horseViewModel.horse.value?.gender)
                 findNavController().navigateUp()
                 return true
             }

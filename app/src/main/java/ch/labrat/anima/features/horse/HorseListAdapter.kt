@@ -14,14 +14,12 @@ import ch.labrat.anima.utilities.TAG
 /**
  * Adapter for the [RecyclerView] in [HorseListFragment].
  */
-class HorseListAdapter : ListAdapter<Horse, HorseListAdapter.ViewHolder>(ITEM_COMPARATOR) {
+class HorseListAdapter : ListAdapter<HorseListItem, HorseListAdapter.ViewHolder>(ITEM_COMPARATOR) {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val horse = getItem(position)
         holder.apply {
             bind(createOnClickListener(horse.id), horse)
-            Log.d(TAG, "Bind horse ${horse.name}!")
-
             itemView.tag = horse
         }
     }
@@ -42,10 +40,10 @@ class HorseListAdapter : ListAdapter<Horse, HorseListAdapter.ViewHolder>(ITEM_CO
         private val binding: ListItemHorseBinding
     ) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(listener: View.OnClickListener, item: Horse) {
+        fun bind(listener: View.OnClickListener, item: HorseListItem) {
             binding.apply {
                 clickListener = listener
-                horse = item
+                this.item = item
                 executePendingBindings()
             }
         }
@@ -53,23 +51,22 @@ class HorseListAdapter : ListAdapter<Horse, HorseListAdapter.ViewHolder>(ITEM_CO
 
     override fun getItemCount(): Int {
         val count = super.getItemCount()
-        Log.d(TAG, "Adapter has $count items!")
         return count
     }
 
     companion object {
         // A DiffUtil.ItemCallback for calculating the diff between two non-null items in a list.
-        val ITEM_COMPARATOR = object : DiffUtil.ItemCallback<Horse>() {
+        val ITEM_COMPARATOR = object : DiffUtil.ItemCallback<HorseListItem>() {
             override fun areContentsTheSame(
-                oldItem: Horse,
-                newItem: Horse
+                oldItem: HorseListItem,
+                newItem: HorseListItem
             ): Boolean {
                 return oldItem == newItem
             }
 
             override fun areItemsTheSame(
-                oldItem: Horse,
-                newItem: Horse
+                oldItem: HorseListItem,
+                newItem: HorseListItem
             ): Boolean {
                 return oldItem.id == newItem.id
             }

@@ -18,10 +18,9 @@ import ch.labrat.anima.utilities.InjectorUtils
  */
 class HorseDetailFragment : Fragment() {
     private val args: HorseDetailFragmentArgs by navArgs()
-    private lateinit var shareText: String
 
-    private val horseViewModel: HorseViewModel by viewModels {
-        InjectorUtils.provideHorseViewModelFactory(requireActivity(), args.id)
+    private val horseDetailViewModel: HorseDetailViewModel by viewModels {
+        InjectorUtils.provideHorseDetailViewModelFactory(requireActivity(), args.id)
     }
 
     override fun onCreateView(
@@ -31,12 +30,12 @@ class HorseDetailFragment : Fragment() {
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentHorseDetailBinding>(
             inflater, R.layout.fragment_horse_detail, container, false).apply {
-            viewModel = horseViewModel
+            viewModel = horseDetailViewModel
             lifecycleOwner = this@HorseDetailFragment
         }
 
-        horseViewModel.horse.observe(this, Observer { horse ->
-            (activity as? AppCompatActivity)?.supportActionBar?.title = horseViewModel.horse.value?.name
+        horseDetailViewModel.horse.observe(this, Observer { horse ->
+            (activity as? AppCompatActivity)?.supportActionBar?.title = horseDetailViewModel.horse.value?.horseName
         })
 
         setHasOptionsMenu(true)
@@ -58,7 +57,7 @@ class HorseDetailFragment : Fragment() {
             }
             R.id.action_delete -> {
                 if (args.id != "") {
-                    horseViewModel.delete()
+                    horseDetailViewModel.delete()
                 }
                 findNavController().navigateUp()
                 return true

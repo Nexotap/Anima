@@ -10,6 +10,6 @@ import androidx.lifecycle.switchMap
  */
 class HorseListViewModel internal constructor(horseRepository: HorseRepository) : ViewModel() {
 
-    val horses: LiveData<List<Horse>> = horseRepository.getHorses()
+    val horses: LiveData<List<HorseListItem>> = horseRepository.getHorseList()
 
 }
